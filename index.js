@@ -40,7 +40,7 @@ app.get('/authorize', (req, res) => {
  * /auth is for redirect based flow which is the recommended method now
  * note that we probably don't need a new endpoint for redirection since it can all happen with Auth0's native upstream idp parameter mapping.
  */
-app.get('https://frozen-lowlands-18968-6d9fe27876c9.herokuapp.com/', (req, res) => {
+app.get('https://frozen-lowlands-18968-6d9fe27876c9.herokuapp.com/auth', (req, res) => {
     const context = req.webtaskContext;
     if (!req.query.client_id) {
         return res.send(400, 'missing client_id');

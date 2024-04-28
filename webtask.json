@@ -32,11 +32,11 @@
         "description": "Singpass Environment Staging",
         "type": "select",
         "allowMultiple": false,
-        "default": "https://stg-id.singpass.gov.sg",
+        "default": "https://id.singpass.gov.sg",
         "options": [
           {
-            "value": "https://stg-id.singpass.gov.sg",
-            "text": "Staging"
+            "value": "https://id.singpass.gov.sg",
+            "text": "Production"
           }
         ]
       },
